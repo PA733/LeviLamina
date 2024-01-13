@@ -31,9 +31,7 @@ else
     add_requires("bdslibrary 1.20.50.03")
 end
 
-if not has_config("vs_runtime") then
-    set_runtimes("MD")
-end
+set_runtimes("MD")
 
 option("tests")
     set_default(false)
